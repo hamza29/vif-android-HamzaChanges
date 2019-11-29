@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ivFolder"
+            android:background="@drawable/ic_folder_black_24dp"
+            android:layout_width="50dp"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tv_species"
+            android:layout_toRightOf="@id/ivFolder"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mi herencia"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <ImageView
+            android:id="@+id/ivOption"
+            android:background="@drawable/ic_more_vert_black_24dp"
+            android:layout_width="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_review_pending_files"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Review Pending Files" />
+        <item
+            android:id="@+id/nav_recent"
+            android:icon="@drawable/recent"
+            android:title="Recent" />
+        <item
+            android:id="@+id/nav_shared_withme"
+            android:icon="@drawable/sharewithme"
+            android:title="Shared with me" />
+        <item
+            android:id="@+id/nav_bookmark"
+            android:icon="@drawable/bookmark"
+            android:title="Bookmark" />
+        <item
+            android:id="@+id/nav_recyclebin"
+            android:icon="@drawable/recyclebin"
+            android:title="Recycle Bin" />
+        <item
+            android:id="@+id/nav_alerts"
+            android:icon="@drawable/alerts"
+            android:title="Alerts" />
+        <item
+            android:id="@+id/nav_lables"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Lables" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Contacts" />
+    </group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account"
+            android:title="Account" >
+        </item>
+        <item
+            android:id="@+id/nav_personal_info"
+            android:icon="@drawable/personal_info"
+            android:title="Personal Info" >
+        </item>
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/language"
+            android:title="Language" >
+        </item>
+        <item
+            android:id="@+id/nav_security"
+            android:icon="@drawable/security"
+            android:title="Security" >
+        </item>
+        <item
+            android:id="@+id/nav_backup"
+            android:icon="@drawable/backup"
+            android:title="Backup" >
+        </item>
+        <item
+            android:id="@+id/nav_buy_storage"
+            android:icon="@drawable/buystorage"
+            android:title="Buy Storage" >
+        </item>
+    </group>
+    <group
+        android:id="@+id/menu_bottom_one"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_add_services"
+            android:icon="@drawable/additional_services"
+            android:title="Additional Services" >
+        </item>
+        <item
+            android:id="@+id/nav_initial_tutorial"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Initial Tutorial" >
+        </item>
+        <item
+            android:id="@+id/nav_how_itworks"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="How it works" >
+        </item>
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Privacy Policy" >
+        </item>
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Terms and Conditions" >
+        </item>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="About" >
+        </item>
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Support" >
+        </item>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Logout" >
+        </item>
+    </group>
+
+</menu>

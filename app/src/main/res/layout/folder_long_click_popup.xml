@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popupcolor"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rlFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ivFolder"
+            android:text="Rename"
+            android:textColor="@color/popuptextcolor"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/ivFolder"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/rename" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvDescriptoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ivDescriptoin"
+            android:text="Description"
+            android:textColor="@color/popuptextcolor"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/ivDescriptoin"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/desc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlChangeColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvChangeColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ivChangeColor"
+            android:text="Change Color"
+            android:textColor="@color/popuptextcolor"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/ivChangeColor"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/checkcolor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCreateShortcut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvCreateShortcut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ivCreateShortcut"
+            android:text="Create Shortcut"
+            android:textColor="@color/popuptextcolor"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/ivCreateShortcut"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/createshortcut" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ivDownload"
+            android:text="Download"
+            android:textColor="@color/popuptextcolor"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/ivDownload"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/download" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPrint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ivPrint"
+            android:text="Print"
+            android:textColor="@color/popuptextcolor"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/ivPrint"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/print" />
+    </RelativeLayout>
+
+</LinearLayout>

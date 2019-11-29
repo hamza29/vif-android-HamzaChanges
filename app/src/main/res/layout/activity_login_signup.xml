@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/redbg"
+    tools:context="glowingsoft.com.vif.Activities.LoginSignupActivity">
+
+    <glowingsoft.com.vif.DualProgressView
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/applogofull" />
+
+    <ImageView
+        android:id="@+id/ivLoginBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/slidelogin"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivSignupBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/signupbg"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlEmail"
+        android:layout_alignLeft="@+id/tvLogin"
+        android:layout_alignParentRight="@+id/tvLogin"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_rounded"
+            android:hint="User"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@color/white"></EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvLogin"
+        android:layout_alignLeft="@+id/tvLogin"
+        android:layout_alignTop="@+id/btnLogin"
+        android:layout_alignParentRight="@+id/tvLogin"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email*"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ivEmail"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@+id/tvEmail"
+            android:layout_alignEnd="@+id/etEmail"
+            android:layout_alignRight="@+id/etEmail"
+            android:src="@drawable/user_email" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvEmail"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_rounded"
+            android:hint="user@gmail.com"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@color/white"></EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlEmail"
+        android:layout_alignLeft="@+id/tvLogin"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ivPassword"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@+id/tvPassword"
+            android:layout_alignEnd="@+id/etPassword"
+            android:layout_alignRight="@+id/etPassword"
+            android:src="@drawable/password_icon" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvPassword"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_rounded"
+            android:hint="123456"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@color/white"></EditText>
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Forgot Password ?"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_alignEnd="@+id/ivLogo"
+        android:layout_alignRight="@+id/ivLogo"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Signup"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/ivLogin"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/rlPassword"
+        android:layout_alignLeft="@+id/rlPassword"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/btn_login" />
+
+    <ImageView
+        android:id="@+id/ivSignup"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/rlPassword"
+        android:layout_alignLeft="@+id/rlPassword"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/ivsignup"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlName"
+        android:layout_alignStart="@+id/rlName"
+        android:layout_alignLeft="@+id/rlName"
+        android:text="Name"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivName"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_above="@+id/rlName"
+        android:layout_alignEnd="@+id/rlName"
+        android:layout_alignRight="@+id/rlName"
+        android:src="@drawable/user_email"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
